@@ -148,3 +148,14 @@ void equate(matrix* m1, matrix* m2)
     for (j=0; j<m1->col_dim; j++)
       m2->element[i][j] = m1->element[i][j];
 }
+void transpose(matrix m) //same as static trying to figure out the diff 
+{
+ int i,j;
+matrix result;
+result=create_empty(m.row_dim, m.col_dim);
+  for (i=0; i<rdim; i++)
+    for (j=0; j<cdim; j++)
+      result.element[i][j]= m.element[j][i];
+return result;
+        }
+

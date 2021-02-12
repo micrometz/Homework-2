@@ -13,7 +13,6 @@ typedef struct {
   T** element;
 } matrix;
 
-/* function prototypes */
 matrix create_empty(int rdim, int cdim);
 matrix create_initval(int rdim, int cdim, T val);
 matrix create_initvals(int rdim, int cdim, T* initval);
@@ -27,6 +26,7 @@ matrix subtract(matrix, matrix);
 matrix negate(matrix);
 matrix multiply(matrix, matrix);
 matrix scalar_multiply(T scalar, matrix);
-/* remaining function prototypes not shown */
+matrix transpose(matrix m);
+
 
 #endif
