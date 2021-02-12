@@ -1,4 +1,4 @@
-/* File: test_static.c */
+
 #include "matrix.h"
 
 int main() 
